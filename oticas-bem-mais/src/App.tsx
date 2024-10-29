@@ -1,9 +1,16 @@
+import {Routes,Route} from 'react-router-dom'
+import { Home } from './pages/Home';
+
 function App() {
-  return (
-    <div className="text-center text-blue-500 font-bold">
-      <h1>Hello, Tailwind CSS with Vite and React!</h1>
-    </div>
-  );
+  return(
+    <>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+
+      </Routes>
+    
+    </>
+  )
 }
 
 export default App;
