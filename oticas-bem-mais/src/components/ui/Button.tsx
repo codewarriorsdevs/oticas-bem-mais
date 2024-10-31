@@ -1,10 +1,18 @@
-export const Button = ()=>{
+import React from 'react';
 
-    return(
-
-        <>
-            <button className="mt-10 h-20 w-90 p-4 font-bold text-3xl rounded-lg bg-blackColor text-whiteColor ">encontre seu oculos ideal!</button>
-        
-        </>
-    )
+interface ButtonProps {
+  text: string;
+  className?: string;
+  onClick?: () => void;
 }
+
+export const Button: React.FC<ButtonProps> = ({ text, className = "", onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`p-4 font-bold text-lg rounded-lg bg-blackColor text-whiteColor shadow-md ${className}`}
+    >
+      {text}
+    </button>
+  );
+};

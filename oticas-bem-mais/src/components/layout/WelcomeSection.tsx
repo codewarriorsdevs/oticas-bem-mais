@@ -13,7 +13,7 @@ export default function WelcomeSection() {
             </h1>{" "}
             para você{" "}
           </h1>
-          <Button />
+          <Button text="Encontre seu Óculos Ideal!" />
         </div>
         <div>
           <img src={img} height={700} width={700} />
