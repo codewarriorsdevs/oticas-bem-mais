@@ -1,7 +1,10 @@
+import Cart from "../ui/Cart";
+
 export default function Navbar() {
+
   return (
     <>
-      <header className="sticky top-0 z-10 px-12 py-5 flex justify-between items-center text-xs bg-bgPrimary text-whiteColor">
+      <header className={`sticky top-0 z-10 px-12 py-5 flex justify-between items-center text-xs bg-bgPrimary text-whiteColor`}>
         <h1 className="font-bold">Logo</h1>
         <div className="flex items-center gap-8">
         <nav className="flex items-center font-bold gap-3 max-sm:hidden">
@@ -20,9 +23,7 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <button className="bg-black text-whiteColor px-4 py-2 rounded-md" aria-label="Abrir carrinho">
-            Carrinho
-        </button>
+        <Cart />
         </div>
       </header>
     </>
