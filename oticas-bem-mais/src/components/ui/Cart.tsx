@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import cartsvg from '../../assets/icons/cart.svg'
 
 export default function Cart({ bg = "bg-black", className = "" }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,10 +12,10 @@ export default function Cart({ bg = "bg-black", className = "" }) {
     <>
       <button
         onClick={toggleModal}
-        className={`${bg} text-whiteColor px-4 py-2 rounded-md ${className}`}
+        className={`${bg} flex gap-1 items-center text-whiteColor px-4 py-2 rounded-md ${className}`}
         aria-label="Abrir carrinho"
       >
-        Carrinho
+        <img src={cartsvg} className='w-5' /> Carrinho
       </button>
 
       <div
