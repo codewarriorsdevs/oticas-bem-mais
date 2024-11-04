@@ -1,17 +1,17 @@
 import { Button } from "../ui/Button";
-import img from "../../assets/images/website/image 7.png";
+import img from "../../assets/images/website/image-7.webp";
 
 export default function WelcomeSection() {
   return (
-    <section className="flex justify-between flex-col sm:flex-row  sm:justify-center sm:items-center">
-        <div className="pl-20 pt-20">
-          <h1 className=" font-bold text-whiteColor text-5xl md:text-center">
-            Pra te ver bem,
-            <br /> BEM MAIS!
-            <h1 className="font-bold text-blackColor text-5xl">
+    <section className="flex justify-between flex-col bg-bgPrimary sm:flex-row  max-sm:justify-center max-sm:items-center">
+        <div className="flex flex-col px-20 pt-20 max-md:px-5 max-md:justify-center">
+          <h1 className="text-left font-bold text-whiteColor text-5xl max-md:text-center">
+            Pra te ver bem,<br />
+            BEM MAIS!<br />
+            <span className="font-bold text-blackColor text-5xl">
               Qualidade e estilo
-            </h1>{" "}
-            para você{" "}
+            </span><br />
+            para você
           </h1>
           <Button text="Encontre seu Óculos Ideal!" />
         </div>
