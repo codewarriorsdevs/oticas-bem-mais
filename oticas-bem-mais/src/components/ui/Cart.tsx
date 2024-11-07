@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
-import cartsvg from '../../assets/icons/cart.svg'
+import { useState, useCallback } from 'react';
+import cartsvg from '../../assets/icons/cart.svg';
+import useCartStore from '../../store/useCartStore';
+import { Product } from '../../types/Product';
+import { Button } from './Button';
+import { toast } from 'react-toastify';
 
 export default function Cart({ bg = "bg-black", className = "" }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const cart = useCartStore((state) => state.cart);
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
+  const clearCart = useCartStore((state) => state.clearCart);
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+  const toggleModal = useCallback(() => {
+    setIsModalOpen((prev) => !prev);
+  }, []);
+
+  const handleCheckout = useCallback(() => {
+    toast.success("Redirecionando para finalizar a compra...");
+    clearCart(); 
+  }, [clearCart]);
 
   return (
     <>
@@ -15,7 +27,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
         className={`${bg} flex gap-1 items-center text-whiteColor px-4 py-2 rounded-md ${className}`}
         aria-label="Abrir carrinho"
       >
-        <img src={cartsvg} className='w-5' /> Carrinho
+        <img src={cartsvg} className='w-5' alt="Ícone do Carrinho" /> Carrinho
       </button>
 
       <div
@@ -25,14 +37,37 @@ export default function Cart({ bg = "bg-black", className = "" }) {
       >
         <button
           onClick={toggleModal}
-          className="absolute top-4 right-4"
+          className="text-2xl font-bold absolute top-4 right-4"
           aria-label="Fechar carrinho"
         >
           &times;
         </button>
         <div className="p-4">
           <h2 className="text-lg font-bold mb-4">Carrinho</h2>
-          <p>Seu carrinho está vazio.</p>
+          {cart.length > 0 ? (
+            <>
+              <ul className="flex flex-col gap-3 mb-4">
+                {cart.map((product: Product) => (
+                  <li key={product.id} className="flex flex-col gap-2 w-full justify-between items-center">
+                    <img src={product.image} alt="Imagem do produto" />
+                    <div className='w-full flex justify-between'>
+                      <span>{product.name}</span>
+                      <span>R$ {product.price.toFixed(2)}</span>
+                    </div>
+                    <Button text='Remover' className='py-1 bg-blackColor text-sm' onClick={() => removeFromCart(product.id)}/>
+                  </li>
+                ))}
+              </ul>
+              <button
+                onClick={handleCheckout}
+                className="bg-white w-full py-2 text-blackColor text-center rounded-md font-medium"
+              >
+                Finalizar Compra
+              </button>
+            </>
+          ) : (
+            <p>Seu carrinho está vazio.</p>
+          )}
         </div>
       </div>
 
