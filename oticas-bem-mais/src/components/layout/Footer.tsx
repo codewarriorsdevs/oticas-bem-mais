@@ -3,7 +3,7 @@ import Cart from "../ui/Cart";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-8 bg-blackColor text-whiteColor p-8 max-md:text-sm">
+    <footer className="flex flex-col gap-8 bg-blackColor text-whiteColor px-12 py-8 max-md:text-sm">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-8">
             <img src="" alt="Logo da Oticas Bem Mais" />
