@@ -7,10 +7,10 @@ export default function OptionCart() {
         {category.map((p, i) => (
           <div
             key={i}
-            className="bg-skinColor flex flex-col justify-center items-center gap-2 p-5 rounded-xl"
+            className="bg-skinColor flex flex-col w-80 h-96 justify-center items-center gap-2  rounded-xl"
           >
-            <img src={p.image} height={200} width={200} />
-            <h2 className="text-redColor"> {p.category} </h2>
+            <img src={p.image} height={250} width={250} />
+            <h1 className="text-redColor font-bold"> {p.category} </h1>
             <button className="p-2 bg-redColor rounded-xl m-2 text-whiteColor font-bold">
               Escolher o Meu
             </button>
