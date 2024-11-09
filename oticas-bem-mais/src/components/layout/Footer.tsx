@@ -1,13 +1,14 @@
 import { Button } from "../ui/Button";
+import logo from "../../assets/images/website/logo.png";
 import Cart from "../ui/Cart";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col gap-8 bg-blackColor text-whiteColor px-12 py-8 max-md:text-sm">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-8">
-            <img src="" alt="Logo da Oticas Bem Mais" />
-            <h2 className="font-bold">
+        <div className="flex items-center justify-between gap-4 max-md:flex-col">
+          <div className="flex items-center gap-8 max-md:flex-col">
+            <img src={logo} alt="Logo" className="w-32" />
+            <h2 className="font-bold max-md:text-center">
             Vamos iniciar uma conversa no WhatsApp com a equipe de atendimento
             </h2>
           </div>
