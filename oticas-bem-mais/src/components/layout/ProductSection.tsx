@@ -21,7 +21,7 @@ export default function ProductSection() {
     : products.filter((p) => p.category === selectedFilter);
 
   return (
-    <section className="flex flex-col gap-12 justify-center items-center px-20 py-20 max-md:px-8">
+    <section className="flex flex-col gap-12 justify-center items-center px-20 py-20 max-md:px-8" id="product-section">
       <h1 className="text-bgPrimary text-center font-bold">Descubra as Novidades</h1>
 
       <ProductFilter onSelectFilter={setSelectedFilter} />
