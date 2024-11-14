@@ -6,6 +6,7 @@ import WelcomeSection from "./components/layout/WelcomeSection";
 import ProductSection from "./components/layout/ProductSection";
 import CategorySection from "./components/layout/CategorySection";
 import AnnounceSection from './components/layout/AnnounceSection';
+import FeedbackSection from './components/layout/FeedbackSection';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <WelcomeSection />
         <CategorySection/>
         <ProductSection />
+        <FeedbackSection/>
         <AnnounceSection />
       </main>
       <Footer />
