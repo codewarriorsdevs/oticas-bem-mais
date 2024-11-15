@@ -5,13 +5,13 @@ import { Button } from "./Button"
 export default function Feedback(){
     return(
         <>
-            <div className="bg-greyColor  flex flex-row ">
+            <div className="bg-greyColor p-14 flex flex-row ">
 
-               <div className="grid grid-cols-2 gap-1 p-4">
+               <div className="grid grid-cols-2 gap-4 p-4">
                {comments.map((m)=>(
 
                     <>
-                        <div className="flex flex-row gap-4 mb-10  bg-white p-4 rounded-lg">
+                        <div className="flex flex-row gap-4 mb-10 text-justify w-70  h-0 bg-white p-4 rounded-lg">
                         <div className="rounded-full " >
                                 <img  src="" alt="imagem"/>
                             </div>
@@ -26,11 +26,15 @@ export default function Feedback(){
                         ))}
                 </div>  
 
-                <div className="p-20">
-                   <div>
-                     <img className='rounded-full' src={img} width={400} height={450}/>
-                     <h1 className="text-bgPrimary font-bold text-justify text-2xl">Pronto para ter a mesma experiencia incrivel?</h1>
-                    <Button text="encontre seu oculos" className="bg-blackColor" />
+                <div className="p-20  ">
+                   <div className='flex flex-col justify-normal'>
+                     <div className='flex justify-start items-start'>
+                     <div className="bg-bgPrimary text-center p-9 rounded-full mb-10">
+                         <img src={img} width={100} height={250}/>
+                     </div>
+                     </div>
+                     <h1 className="text-bgPrimary font-bold text-justify text-2xl mb-10">Pronto para ter a mesma experiencia incrivel?</h1>
+                    <Button text="encontre seu oculos ideal" className="bg-blackColor w-96 text-xl" />
                    </div>
                 </div>             
              </div>
