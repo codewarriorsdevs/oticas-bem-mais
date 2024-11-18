@@ -1,6 +1,7 @@
 import { Button } from "../ui/Button";
 import logo from "../../assets/images/website/logo.png";
 import Cart from "../ui/Cart";
+import { navLinks } from "./Navbar";
 
 export default function Footer() {
   return (
@@ -16,18 +17,11 @@ export default function Footer() {
         </div>
         <div className="flex justify-center items-center">
           <ul className="flex items-center gap-4">
-          <li className="cursor-pointer">
-              <a href="#">Início</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#">Óculos</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#">Benefícios</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#">Contato</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.name} className="cursor-pointer">
+                <a href={link.href}>{link.name}</a>
+              </li>
+            ))}
             <Cart className="bg-transparent !m-0 !p-0" />
           </ul>
         </div>

@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  className?: string;
-  onClick?: () => void;
+  className?: string; 
 }
 
-export const Button: React.FC<ButtonProps> = ({ text, className = "", onClick }) => {
+export const Button: React.FC<ButtonProps> = ({
+  text,
+  className = "",
+  ...rest
+}) => {
   return (
     <button
-      onClick={onClick}
       className={`p-4 font-bold text-lg rounded-lg whitespace-nowrap text-whiteColor shadow-md ${className}`}
+      {...rest}
     >
       {text}
     </button>
