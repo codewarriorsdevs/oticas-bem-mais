@@ -3,7 +3,7 @@ import { category } from "../../data/Category";
 export default function OptionCart() {
   return (
     <>
-      <div className="flex gap-10 max-md:flex-col">
+      <div className="flex gap-10 max-md:flex-col md:justify-center items-center">
         {category.map((p, i) => (
           <div
             key={i}
