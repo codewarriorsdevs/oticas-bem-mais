@@ -5,7 +5,7 @@ import { Button } from "./Button"
 export default function Feedback(){
     return(
         <>
-           <div className="bg-greyColor p-14 flex flex-col md:flex-row">
+           <div className="p-14 flex flex-col md:flex-row">
   
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
     {comments.map((m) => (
