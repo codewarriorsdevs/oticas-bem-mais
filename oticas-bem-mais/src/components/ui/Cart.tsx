@@ -62,7 +62,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
                     key={product.id}
                     className="flex flex-col gap-2 w-full justify-between items-center"
                   >
-                    <img src={product.image} alt="Imagem do produto" />
+                    <img src={product.image} className="rounded-md" alt="Imagem do produto" />
                     <div className="w-full flex flex-col gap-3">
                       <span>{product.name}</span>
                       <span>{product.category}</span>
