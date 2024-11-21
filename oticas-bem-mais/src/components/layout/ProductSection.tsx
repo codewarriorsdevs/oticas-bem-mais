@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 
 export default function ProductSection() {
   const [selectedFilter, setSelectedFilter] = useState("Todos");
+  const [visibleCount, setVisibleCount] = useState(10); // Quantidade inicial de produtos visíveis
   
   const addToCart = useCartStore((state) => state.addToCart);
 
@@ -20,17 +21,23 @@ export default function ProductSection() {
     ? products
     : products.filter((p) => p.category === selectedFilter);
 
+  const visibleProducts = filteredProducts.slice(0, visibleCount);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prevCount) => prevCount + 10); // Incrementa mais 10 produtos
+  };
+
   return (
     <section className="flex flex-col gap-12 justify-center items-center px-20 py-20 max-md:px-8" id="product-section">
-      <h1 className="text-bgPrimary text-center font-bold">Descubra as Novidades</h1>
+      <h1 className="text-bgPrimary text-center text-4xl mb-5 font-bold">Descubra as Novidades</h1>
 
       <ProductFilter onSelectFilter={setSelectedFilter} />
 
       <div className="w-full grid gap-4 grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
-        {filteredProducts.map((p) => (
-          <div key={p.id} className="flex flex-col gap-1 p-4 border rounded-md shadow-md">
+        {visibleProducts.map((p) => (
+          <div key={p.id} className="flex flex-col gap-2 p-4 border rounded-md shadow-md">
             <div>
-              <img className="w-full" src={p.image} alt={"Imagem de " + p.name} />
+              <img className="w-full rounded-md" src={p.image} alt={"Imagem de " + p.name} />
             </div>
             <div className="w-max bg-bgPrimary px-2 py-0 rounded-full">
               <p className="text-sm text-whiteColor">{p.category}</p>
@@ -47,6 +54,14 @@ export default function ProductSection() {
           </div>
         ))}
       </div>
+
+      {visibleCount < filteredProducts.length && (
+        <Button
+          className="mt-8 bg-bgPrimary text-whiteColor py-2 px-4 rounded-md"
+          text="Carregar mais..."
+          onClick={handleLoadMore}
+        />
+      )}
     </section>
   );
 }

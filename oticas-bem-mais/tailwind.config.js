@@ -14,7 +14,8 @@ export default {
         blackColor:'#1e1e1e',
         whiteColor:'#f4ebe7',
         skinColor: '#ffd7a8',
-        redColor: '#f05706'
+        redColor: '#f05706',
+        greyColor: '#ededed'
       },
     },
   },

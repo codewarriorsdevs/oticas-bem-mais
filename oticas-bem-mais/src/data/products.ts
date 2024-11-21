@@ -1,15 +1,50 @@
 import { Product } from '../types/Product';
-import product1 from '../assets/images/products/product-1.webp';
-import product2 from '../assets/images/products/product-2.webp';
-import product3 from '../assets/images/products/product-3.webp';
+import raybang15 from '../assets/images/products/raybang15.jpeg';
+import sportfeminino from '../assets/images/products/sportfeminino.jpeg';
+import sportunissex from '../assets/images/products/sportunissex.jpeg';
+import nextfeminino from '../assets/images/products/nextfeminino.jpeg';
+import raybanunissex from '../assets/images/products/raybanunissex.jpeg';
+import speedospeed3 from '../assets/images/products/speedospeed3.jpeg';
+import next from '../assets/images/products/next.jpeg';
+import hickmann from '../assets/images/products/hickmann.jpeg';
+import armacaonext from '../assets/images/products/armaçãonextmasculina.jpeg';
+import armacaonike from '../assets/images/products/armacaonikemasculina.jpeg';
+import armacaooakley from '../assets/images/products/armaçãooakleymasculina.jpeg';
+import armacaohb from '../assets/images/products/armacaohbmasculina.jpeg';
+import armacaoparafusadafeminina from '../assets/images/products/armacaoparafusadafeminina.jpeg';
+import armacaooackleymasc from '../assets/images/products/armacaooakleymasculina.jpeg';
+import armacaofeminipromo from '../assets/images/products/armaçãofemini.jpeg';
+import armacaofeminipromo2 from '../assets/images/products/ArmFemininaPromo.jpeg';
+import armacaofeminicarmin from '../assets/images/products/ArmFemininaCarmin.jpeg';
+import infantilmasculinarayban from '../assets/images/products/infantilmasculinarayban.jpeg';
+import infantilmasculinanovit from '../assets/images/products/infantilnovit.jpeg';
+import infantilfemininaskechers from '../assets/images/products/infantilskechers.jpeg';
 
 const products: Product[] = [
-  { id: 1, name: "Produto 1", category: "Óculos de Sol", price: 299.99, image: product1},
-  { id: 2, name: "Produto 2", category: "Óculos Infantil", price: 240.99, image: product2},
-  { id: 3, name: "Produto 3", category: "Óculos de Sol", price: 399.99, image: product3},
-  { id: 4, name: "Produto 4", category: "Óculos de Grau", price: 420.30, image: product2},
-  { id: 5, name: "Produto 5", category: "Óculos de Grau", price: 769.90, image: product1},
-  // Adicionar mais produtos conforme necessário
+  // Categoria "Óculos de Grau"
+  { id: 15, name: "Armação Feminina Promocional", category: "Óculos de Grau", price: 289.00, image: armacaofeminipromo },
+  { id: 14, name: "Armação Oakley Masculina", category: "Óculos de Grau", price: 588.00, image: armacaooackleymasc },
+  { id: 10, name: "Armação Nike Masculina", category: "Óculos de Grau", price: 599.00, image: armacaonike },
+  { id: 12, name: "Armação HB Masculina", category: "Óculos de Grau", price: 499.00, image: armacaohb },
+  { id: 13, name: "Armação Parafusada Feminina", category: "Óculos de Grau", price: 590.00, image: armacaoparafusadafeminina },
+  { id: 9, name: "Armação Next Masculina", category: "Óculos de Grau", price: 399.00, image: armacaonext },
+  { id: 17, name: "Armação Feminina Carmin", category: "Óculos de Grau", price: 615.00, image: armacaofeminicarmin },
+
+  // Categoria "Óculos Infantil"
+  { id: 20, name: "Armação Infantil Feminina Skechers", category: "Óculos Infantil", price: 325.00, image: infantilfemininaskechers },
+  { id: 18, name: "Armação Infantil Masculina Rayban", category: "Óculos Infantil", price: 399.00, image: infantilmasculinarayban },
+  { id: 19, name: "Armação Infantil Masculina Novit", category: "Óculos Infantil", price: 289.00, image: infantilmasculinanovit },
+
+  // Categoria "Óculos de Sol"
+  { id: 1, name: "Sport Feminino (Promocional)", category: "Óculos de Sol", price: 119.99, image: sportfeminino },
+  { id: 3, name: "Ray Ban G15 Masculino", category: "Óculos de Sol", price: 598.00, image: raybang15 },
+  { id: 6, name: "Speedo Speed3", category: "Óculos de Sol", price: 399.00, image: speedospeed3 },
+  { id: 8, name: "Hickmann Feminino", category: "Óculos de Sol", price: 399.00, image: hickmann },
+  { id: 7, name: "Next", category: "Óculos de Sol", price: 399.00, image: next },
+  { id: 5, name: "Ray Ban Unissex", category: "Óculos de Sol", price: 638.00, image: raybanunissex },
+  { id: 2, name: "Sport Unissex", category: "Óculos de Sol", price: 119.99, image: sportunissex },
+  { id: 4, name: "Next Feminino", category: "Óculos de Sol", price: 399.00, image: nextfeminino },
 ];
+
 
 export default products;
