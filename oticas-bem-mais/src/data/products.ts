@@ -1,24 +1,24 @@
 import { Product } from '../types/Product';
-import raybang15 from '../assets/images/products/raybang15.jpeg';
-import sportfeminino from '../assets/images/products/sportfeminino.jpeg';
-import sportunissex from '../assets/images/products/sportunissex.jpeg';
-import nextfeminino from '../assets/images/products/nextfeminino.jpeg';
-import raybanunissex from '../assets/images/products/raybanunissex.jpeg';
-import speedospeed3 from '../assets/images/products/speedospeed3.jpeg';
-import next from '../assets/images/products/next.jpeg';
-import hickmann from '../assets/images/products/hickmann.jpeg';
-import armacaonext from '../assets/images/products/armaçãonextmasculina.jpeg';
-import armacaonike from '../assets/images/products/armacaonikemasculina.jpeg';
-import armacaooakley from '../assets/images/products/armaçãooakleymasculina.jpeg';
-import armacaohb from '../assets/images/products/armacaohbmasculina.jpeg';
-import armacaoparafusadafeminina from '../assets/images/products/armacaoparafusadafeminina.jpeg';
-import armacaooackleymasc from '../assets/images/products/armacaooakleymasculina.jpeg';
-import armacaofeminipromo from '../assets/images/products/armaçãofemini.jpeg';
-import armacaofeminipromo2 from '../assets/images/products/ArmFemininaPromo.jpeg';
-import armacaofeminicarmin from '../assets/images/products/ArmFemininaCarmin.jpeg';
-import infantilmasculinarayban from '../assets/images/products/infantilmasculinarayban.jpeg';
-import infantilmasculinanovit from '../assets/images/products/infantilnovit.jpeg';
-import infantilfemininaskechers from '../assets/images/products/infantilskechers.jpeg';
+import raybang15 from '../assets/images/products/raybang15.webp';
+import sportfeminino from '../assets/images/products/sportfeminino.webp';
+import sportunissex from '../assets/images/products/sportunissex.webp';
+import nextfeminino from '../assets/images/products/nextfeminino.webp';
+import raybanunissex from '../assets/images/products/raybanunissex.webp';
+import speedospeed3 from '../assets/images/products/speedospeed3.webp';
+import next from '../assets/images/products/next.webp';
+import hickmann from '../assets/images/products/hickmann.webp';
+import armacaonext from '../assets/images/products/armaçãonextmasculina.webp';
+import armacaonike from '../assets/images/products/armacaonikemasculina.webp';
+import armacaooakley from '../assets/images/products/armaçãooakleymasculina.webp';
+import armacaohb from '../assets/images/products/armacaohbmasculina.webp';
+import armacaoparafusadafeminina from '../assets/images/products/armacaoparafusadafeminina.webp';
+import armacaooackleymasc from '../assets/images/products/armacaooakleymasculina.webp';
+import armacaofeminipromo from '../assets/images/products/armaçãofemini.webp';
+import armacaofeminipromo2 from '../assets/images/products/ArmFemininaPromo.webp';
+import armacaofeminicarmin from '../assets/images/products/ArmFemininaCarmin.webp';
+import infantilmasculinarayban from '../assets/images/products/infantilmasculinarayban.webp';
+import infantilmasculinanovit from '../assets/images/products/infantilnovit.webp';
+import infantilfemininaskechers from '../assets/images/products/infantilskechers.webp';
 
 const products: Product[] = [
   // Categoria "Óculos de Grau"
