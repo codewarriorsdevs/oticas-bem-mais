@@ -19,7 +19,7 @@ const FAQ: React.FC = () => {
         {faq.map((faq, index) => (
           <li key={index}>
             <button
-              className="flex justify-between items-center w-full p-4 text-left font-bold text-lg bg-slate-200 hover:text-bgPrimary"
+              className="flex justify-between items-center w-full p-4 text-left font-bold  bg-slate-200 hover:text-bgPrimary text-2xl"
               onClick={() => toggleVisibility(index)}
             >
               {faq.question}
@@ -32,7 +32,7 @@ const FAQ: React.FC = () => {
               </span>
             </button>
             {visibleIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
+              <p className="mt-2 animate-slideDown text-gray-600 text-2xl">{faq.answer}</p>
             )}
           </li>
         ))}
