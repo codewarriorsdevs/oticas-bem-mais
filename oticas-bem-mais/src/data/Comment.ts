@@ -1,36 +1,42 @@
 import { Comment } from '../types/Comment';
+import img1 from '../assets/icons/icons_marcas/ana.jpg';
+import img2 from '../assets/icons/icons_marcas/carmim.webp';
+import img3 from '../assets/icons/icons_marcas/next.jpg';
+import img4 from '../assets/icons/icons_marcas/nike.png';
+import img5 from '../assets/icons/icons_marcas/oakley.webp';
+import img6 from '../assets/icons/icons_marcas/ray.png';
 
 
 
 export const comments:Comment[] = [
     {
         id:1,
-        comment:'O atendimento foi excelente! Encontrei o óculos perfeito e a entrega foi super rápida. Recomendo a todos',
-        user:'Lucas Andrade'
+        mark:'ana hickmann',
+        img:img1,
     },
     {
         id:2,
-        comment:'Adorei a variedade de modelos disponíveis. Comprei um óculos de sol lindo e recebi em apenas dois dias! ',
-        user:'Mariana Ferreira'
+        mark:'Carmin ',
+        img:img2,
     },
     {
         id:3,
-        comment:'Os especialistas realmente entendem do assunto. Saí da loja com um óculos de grau que ficou perfeito no meu rosto!',
-        user:'Clara Martins'
+        mark:'Next',
+        img:img3,
     },
     {
         id:1,
-        comment:'O atendimento foi excelente! Encontrei o óculos perfeito e a entrega foi super rápida. Recomendo a todos',
-        user:'Lucas Andrade'
+        mark:'Nike',
+        img:img4,
     },
     {
         id:2,
-        comment:'Adorei a variedade de modelos disponíveis. Comprei um óculos de sol lindo e recebi em apenas dois dias! ',
-        user:'Mariana Ferreira'
+        mark:'oakley ',
+        img:img5,
     },
     {
         id:3,
-        comment:'Os especialistas realmente entendem do assunto. Saí da loja com um óculos de grau que ficou perfeito no meu rosto!',
-        user:'Clara Martins'
+        mark:'ray ban',
+        img:img6,
     }
 ]

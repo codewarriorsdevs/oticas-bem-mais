@@ -7,15 +7,15 @@ export default function Feedback(){
         <>
            <div className="p-14 flex flex-col md:flex-row">
   
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 p-4">
     {comments.map((m) => (
       <div key={m.id} className="flex flex-col md:flex-row gap-4 mb-10 text-justify bg-white p-4 rounded-lg">
         <div className="rounded-full">
-          <img src="" alt="imagem"/>
+          <img src={m.img} alt="imagem" width={350} height={200}/>
         </div>
         <div>
-          <h1>{m.comment}</h1>
-          <p className="font-bold">{m.user}</p>
+
+
         </div>
       </div>
     ))}
