@@ -22,7 +22,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
       return;
     }
 
-    const phone = "5586981418197"; // Telefone da ótica
+    const phone = "5586995935964"; // Telefone da ótica
     const whatsappURL = getWhatsAppUrl(cart, phone);
     window.open(whatsappURL, "_blank");
 
