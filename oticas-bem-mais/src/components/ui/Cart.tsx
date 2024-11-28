@@ -22,7 +22,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
       return;
     }
 
-    const phone = "5586981418197"; // Telefone da ótica
+    const phone = "5586995935964"; // Telefone da ótica
     const whatsappURL = getWhatsAppUrl(cart, phone);
     window.open(whatsappURL, "_blank");
 
@@ -47,7 +47,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
       >
         <button
           onClick={toggleModal}
-          className="absolute top-4 right-4"
+          className="absolute top-4 right-4 text-4xl"
           aria-label="Fechar carrinho"
         >
           &times;

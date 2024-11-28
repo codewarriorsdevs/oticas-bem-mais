@@ -5,7 +5,7 @@ import { navLinks } from "./Navbar";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-8 bg-blackColor text-whiteColor px-12 py-8 max-md:text-sm">
+    <footer className="flex flex-col gap-8 bg-blackColor text-whiteColor px-12 py-8 max-md:text-sm" id="footer">
         <div className="flex items-center justify-between gap-4 max-md:flex-col">
           <div className="flex items-center gap-8 max-md:flex-col">
             <img src={logo} alt="Logo" className="w-32" />

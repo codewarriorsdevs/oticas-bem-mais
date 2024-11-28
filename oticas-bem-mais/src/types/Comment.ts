@@ -1,5 +1,6 @@
 export interface Comment{
     id:number,
-    comment:string,
-    user:string
+    img:string,
+    mark:string,
+
 }

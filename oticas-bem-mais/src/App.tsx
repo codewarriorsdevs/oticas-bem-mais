@@ -8,6 +8,7 @@ import CategorySection from "./components/layout/CategorySection";
 import AnnounceSection from './components/layout/AnnounceSection';
 import FeedbackSection from './components/layout/FeedbackSection';
 import FAQ from './components/layout/FaqSection';
+import BenefitsSection from './components/layout/BenefitsSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <main className="bg-white flex flex-col gap-14 mb-20">
         <WelcomeSection />
         <CategorySection/>
+        <BenefitsSection />
         <ProductSection />
         <FeedbackSection/>
         <AnnounceSection />
