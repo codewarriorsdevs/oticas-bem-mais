@@ -24,12 +24,12 @@ export default function ProductSection() {
   const visibleProducts = filteredProducts.slice(0, visibleCount);
 
   const handleLoadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 10); // Incrementa mais 10 produtos
+    setVisibleCount((prevCount) => prevCount + 10);
   };
 
   return (
     <section className="flex flex-col gap-12 justify-center items-center px-20 py-20 max-md:px-8" id="product-section">
-      <h1 className="text-bgPrimary text-center text-4xl mb-5 font-bold">Descubra as Novidades</h1>
+      <h1 className="text-bgPrimary text-center text-4xl mb-5 font-bold max-md:text-2xl">Descubra as Novidades</h1>
 
       <ProductFilter onSelectFilter={setSelectedFilter} />
 
