@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="faq-container px-40 max-md:px-8">
-      <h1 className="text-bgPrimary text-center text-4xl mb-5 font-bold">
+      <h1 className="text-bgPrimary text-center text-4xl mb-5 font-bold max-md:text-2xl">
         Perguntas Frequentes
       </h1>
       <ul className="space-y-4">
@@ -32,7 +32,7 @@ const FAQ: React.FC = () => {
               </span>
             </button>
             {visibleIndex === index && (
-              <p className="mt-2 animate-slideDown text-gray-600 text-2xl">{faq.answer}</p>
+              <p className="mt-2 animate-slideDown text-gray-600 text-xl">{faq.answer}</p>
             )}
           </li>
         ))}

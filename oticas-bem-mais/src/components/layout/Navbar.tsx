@@ -3,9 +3,9 @@ import logo from "../../assets/images/website/logo.png";
 
 export const navLinks = [
   { name: "Início", href: "#" },
-  { name: "Óculos", href: "#" },
-  { name: "Benefícios", href: "#" },
-  { name: "Contato", href: "#" },
+  { name: "Óculos", href: "#product-section" },
+  { name: "Benefícios", href: "#benefits-section" },
+  { name: "Contato", href: "#footer" },
 ];
 
 export default function Navbar() {
