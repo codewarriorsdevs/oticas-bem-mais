@@ -5,7 +5,7 @@ import sportunissex from '../assets/images/products/sportunissex.webp';
 import nextfeminino from '../assets/images/products/nextfeminino.webp';
 import raybanunissex from '../assets/images/products/raybanunissex.webp';
 import speedospeed3 from '../assets/images/products/speedospeed3.webp';
-import next from '../assets/images/products/next.webp';
+import next from '../assets/images/products/Next.webp';
 import hickmann from '../assets/images/products/hickmann.webp';
 import armacaonext from '../assets/images/products/armaçãonextmasculina.webp';
 import armacaonike from '../assets/images/products/armacaonikemasculina.webp';
