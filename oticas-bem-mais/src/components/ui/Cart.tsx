@@ -47,7 +47,7 @@ export default function Cart({ bg = "bg-black", className = "" }) {
       >
         <button
           onClick={toggleModal}
-          className="absolute top-4 right-4"
+          className="absolute top-4 right-4 text-4xl"
           aria-label="Fechar carrinho"
         >
           &times;
