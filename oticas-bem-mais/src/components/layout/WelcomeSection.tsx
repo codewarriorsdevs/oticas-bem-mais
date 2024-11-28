@@ -13,7 +13,9 @@ export default function WelcomeSection() {
             </span><br />
             para você
           </h1>
-          <Button className="bg-blackColor" text="Encontre seu Óculos Ideal!" />
+          <a href="#product-section">
+            <Button className="bg-blackColor" text="Encontre seu Óculos Ideal!" />
+          </a>
         </div>
         <div>
           <img src={img} height={700} width={700} />
