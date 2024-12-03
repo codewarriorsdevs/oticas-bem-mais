@@ -13,8 +13,8 @@ export default function WelcomeSection() {
             </span><br />
             para você
           </h1>
-          <a href="#product-section">
-            <Button className="bg-blackColor" text="Encontre seu Óculos Ideal!" />
+          <a href="#product-section" className="max-md:w-full">
+            <Button className="bg-blackColor max-md:w-full" text="Encontre seu Óculos Ideal!" />
           </a>
         </div>
         <div>
