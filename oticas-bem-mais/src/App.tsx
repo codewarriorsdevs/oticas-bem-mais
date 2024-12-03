@@ -19,7 +19,7 @@ function App() {
       <main className="bg-white flex flex-col gap-14 mb-20">
         <WelcomeSection />
         <CategorySection/>
-        <a href="https://wa.me/5586995935964"><AnnounceSection imageSrc={anuncio2} altText='Fazemos sua lente com grau!'/></a>
+        <a href="https://wa.me/5586995935964?text=Olá, fiquei interessado nas lentes de contato"><AnnounceSection imageSrc={anuncio2} altText='Fazemos sua lente com grau!'/></a>
         <ProductSection />
         <BenefitsSection />
         <AnnounceSection imageSrc={anuncio1} altText='Traga sua armação e ganhe desconto!'/>
